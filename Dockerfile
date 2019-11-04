@@ -22,6 +22,8 @@ RUN dpkg --add-architecture i386 \
         cmake \
         radare2 \
         zsh \
+        iputils-ping \
+        netcat \
     && pip install --upgrade pip \
     && python -m pip install --upgrade pwntools \
     && PWNLIB_NOTERM=1 pwn update \
