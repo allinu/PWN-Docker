@@ -1,18 +1,12 @@
 # Dnaderlion PWN Platform
 
-
-
  ## What inside?
 
-- pwntools
+- **pwntools**
 
-  ![pwntools](./pic/pwntools.png)
+- **pwndbg**
 
-- pwndbg
-
-  
-
-- radare2
+- **radare2**
 	```sh
 	 ____  ___  ___  ___ ____  ___   ____
 	|  _ \/   \|   \/   \  _ \/ _ \ (__  \
@@ -23,6 +17,8 @@
 	
 	                             --pancake
 	```
+- **netcat**
+  > you can use netcat to connect server in this docker
 
 ## How to use?
 
