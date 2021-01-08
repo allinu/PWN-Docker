@@ -1,5 +1,5 @@
 FROM ubuntu:18.04
-MAINTAINER Maskros Liona
+MAINTAINER maskros Liona
 
 ADD sources.list /etc/apt/
 
@@ -28,7 +28,7 @@ RUN dpkg --add-architecture i386 \
     && python -m pip install --upgrade pwntools \
     && PWNLIB_NOTERM=1 pwn update \
     && apt-get install -y sudo \
-    && useradd -m naskros \
+    && useradd -m maskros \
     && passwd --delete --unlock maskros \
     && echo "maskros ALL=(ALL:ALL) NOPASSWD: ALL" > /etc/sudoers.d/maskros
 USER root
@@ -36,9 +36,9 @@ RUN pip install --upgrade git+https://github.com/Gallopsled/pwntools@stable
 RUN PWNLIB_NOTERM=1 pwn update
 USER maskros
 RUN sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-RUN git clone https://github.com/pwndbg/pwndbg /home/danderlion/pwndbg \
+RUN git clone https://github.com/pwndbg/pwndbg /home/maskros/pwndbg \
     && cd /home/maskros/pwndbg \
     && ./setup.sh
 WORKDIR /home/maskros/work
 
-CMD ["/bin/zsh"]
+CMD ["/bin/bash"]
