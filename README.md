@@ -1,6 +1,6 @@
-# Dnaderlion PWN Platform
+# PWN Platform
 
- ## What inside?
+## What inside?
 
 - **pwntools**
 	![](https://i.loli.net/2021/01/08/Q9wAtjWZCLRSkF1.png)
