@@ -27,7 +27,7 @@
 **You shuld replace the`-v`content to your own path, and must be `absolute path`.** 
 
 ```shell
-docker run -it --name pwn -v /your/file/path:/home/danderlion/work liona/pwn_with_docker
+docker run -it --name pwn -v /your/file/path:/home/maskros/work liona/pwn_with_docker
 ```
 
 - example:
@@ -35,6 +35,6 @@ docker run -it --name pwn -v /your/file/path:/home/danderlion/work liona/pwn_wit
   > if you at your desktop, it might  be:
   >
   > ```shell
-  > docker run -it --name pwn -v /home/yourname/Desktop:/home/danderlion/work liona/pwn_with_docker
+  > docker run -it --name pwn -v /home/yourname/Desktop:/home/maskros/work liona/pwn_with_docker
   > ```
 
